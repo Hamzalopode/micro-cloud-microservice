@@ -1,2 +1,1 @@
-# micro-cloud-microservice
-School Project
+# Spring Cloud Microservices
