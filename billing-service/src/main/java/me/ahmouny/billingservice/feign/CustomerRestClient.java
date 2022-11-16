@@ -2,6 +2,7 @@ package me.ahmouny.billingservice.feign;
 
 import me.ahmouny.billingservice.models.Customer;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.hateoas.PagedModel;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
@@ -14,5 +15,5 @@ public interface CustomerRestClient {
     Customer getCustomer(@PathVariable(name = "id") Long id);
 
     @GetMapping(path = "/customers?projection=full")
-    Collection<Customer> getCustomers();
+    PagedModel<Customer> getCustomers();
 }
