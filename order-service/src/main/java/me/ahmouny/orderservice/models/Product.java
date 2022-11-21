@@ -1,4 +1,4 @@
-package me.ahmouny.billingservice.models;
+package me.ahmouny.orderservice.models;
 
 import lombok.Data;
 
