@@ -12,6 +12,7 @@ Réaliser par Ahmouny Hamza, pour le control JEE 2022
 
 ## Setup
 Project setup as moduls on Intellij Idea Ultimate to start everything at once
+
 ![image](https://user-images.githubusercontent.com/46407388/206121820-1ea1f5c1-ab29-4b4c-8d98-ac1a96e37a12.png)
 
 ## Customer Service
