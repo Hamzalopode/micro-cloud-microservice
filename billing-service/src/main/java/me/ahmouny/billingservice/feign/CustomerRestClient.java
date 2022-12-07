@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.Collection;
 
-@FeignClient(name = "CUSTOMER-SERVICE")
+@FeignClient(name = "customer-service")
 public interface CustomerRestClient {
 
     @GetMapping(path = "/customers/{id}?projection=full")
