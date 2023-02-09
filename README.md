@@ -95,5 +95,8 @@ https://github.com/Hamzalopode/micro-cloud-angular
 ![image](https://user-images.githubusercontent.com/46407388/206128906-b79d93a5-54e0-42e1-97cf-f11b3477ab1b.png)
 
 
+## KAFKA ANALYTICS GRAPH
+![image](KafkaProjet.gif)
+
 ## Misc
 Projet encadré par Mr. Mohamed Youssfi: https://www.youtube.com/@mohamedYoussfi 2022-2023

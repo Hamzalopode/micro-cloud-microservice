@@ -1,12 +1,13 @@
 package me.ahmouny.Customerservice;
 
-import me.ahmouny.Customerservice.entities.Customer;
-import me.ahmouny.Customerservice.repositories.CustomerRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
+
+import me.ahmouny.Customerservice.entities.Customer;
+import me.ahmouny.Customerservice.repositories.CustomerRepository;
 
 import java.util.Locale;
 import java.util.stream.Stream;
@@ -18,10 +19,11 @@ public class CustomerServiceApplication {
 		SpringApplication.run(CustomerServiceApplication.class, args);
 	}
 	@Bean
-	CommandLineRunner start(CustomerRepository cr)
+	CommandLineRunner start(CustomerRepository cr, RepositoryRestConfiguration r)
 	{
 		return args -> {
-			Stream.of("Ahmouny", "Hamza", "Salma", "Kenza").forEach(c -> {
+			r.exposeIdsFor(Customer.class);
+			Stream.of("Ahmouny","Hamza", "Jack", "Lopode").forEach(c -> {
 				Customer customer = new Customer();
 				customer.setEmail(c.toLowerCase()+"@gmail.com");
 				customer.setName(c.toUpperCase());

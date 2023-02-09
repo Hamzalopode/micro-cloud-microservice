@@ -1,12 +1,13 @@
 package me.ahmouny.Inventoryservice;
 
-import me.ahmouny.Inventoryservice.entities.Product;
-import me.ahmouny.Inventoryservice.repositories.ProductRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
+
+import me.ahmouny.Inventoryservice.entities.Product;
+import me.ahmouny.Inventoryservice.repositories.ProductRepository;
 
 import java.util.UUID;
 import java.util.stream.Stream;
